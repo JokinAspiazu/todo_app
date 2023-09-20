@@ -10,7 +10,7 @@ jobs:
         with:
           node-version: '14'
       - name: npm setup
-        working-directory: ./src/webapp/
+        working-directory: ./src/webapp/api
         run: |
           npm install
-          npm run start-server
+          npm run test
