@@ -10,3 +10,6 @@ jobs:
         with:
           node-version: '14'
       - run: echo 'Hello Testbash!'
+      - run: cd../cd..
+      - run: cd src/webapp/api
+      - run: npm run test
