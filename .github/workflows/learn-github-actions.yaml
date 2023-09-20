@@ -9,7 +9,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: echo 'Hello Testbash!'
-      - run: cd../cd..
-      - run: cd src/webapp/api
-      - run: npm run test
+      - name: npm setup
+        working-directory: ./src/webapp/
+        run: |
+          npm install
+          npm run start-server
